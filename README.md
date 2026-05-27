@@ -4,7 +4,7 @@
 버전: v0.1.0  
 작성자: 박재원  
 배포등급: 내부전용 (Confidential)
-
+작성일: 260527 
 ## 1. 개요
 
 `aivn_sensorpack_nearby_ais`는 시리얼 포트에서 수신한 AIS NMEA 0183 문장과 ECS `!PNSD` 문장을 파싱해 하나의 ROS 2 토픽으로 퍼블리시하는 Python 패키지입니다. ROS 2 Humble 기준으로 동작하며, 실행 중심은 `nearby_ais_node` 하나입니다.
