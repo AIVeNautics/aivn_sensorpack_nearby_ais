@@ -1,0 +1,13 @@
+1. 소켓을 열어준다.
+socat -d -d pty,raw,echo=0,link=/tmp/nearby_ais_in pty,raw,echo=0,link=/tmp/nearby_ais_out
+
+2-1. cat ecs_sample.txt > /tmp/nearby_ais_out 
+ecs 데이터 테스트 . 
+
+2-2. cat ais_sample.txt > /tmp/nearby_ais_out
+ais 데이터 테스트 . 
+
+참고 
+device_type: "auto"로 되어 있음.
+ais 데이터가 먼저 들어오면 ais 타입으로 설정되어서 이후 ecs 데이터는 파싱되지않음. 마찬가지로 ecs데이터가 먼저들어오면 ais데이터 파싱은 되지않음.
+실해역에서는 ais 장비 or ecs 장비 둘중 하나만 사용하기 때문에 문제가 발생하지 않음. 

@@ -1,0 +1,30 @@
+nearby_ais_node:
+  ros__parameters:
+    serial_port_name: "/tmp/nearby_ais_in"
+    baud_rate: 38400
+    data_bits: 8
+    parity: "NONE"
+    stop_bits: 1
+    xonxoff: false
+    rtscts: false
+    dsrdtr: false
+
+    topic_name: "/sensor_pack/external/nearby_ais/ship"
+    frame_id: "nearby_ais"
+    device_type: "auto"
+    checksum_required: true
+
+    poll_period_sec: 0.005
+    read_size: 8192
+    reconnect_sec: 2.0
+    stale_static_info_sec: 600.0
+    no_data_warn_sec: 0.0
+    no_sentence_warn_sec: 0.0
+
+    verbose: false
+    log_rx_sentence: false
+    log_parse_result: true
+    debug_hex_dump: false
+    debug_hex_limit: 64
+    debug_publish_reason: false
+    debug_fragment: false

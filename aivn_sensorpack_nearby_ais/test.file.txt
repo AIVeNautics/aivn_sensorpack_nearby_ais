@@ -1,0 +1,1 @@
+printf '!AIVDM,1,1,,A,15N:`n001oG?Vt@E>R0Owvl0<0S,0*7D\r\n' > /tmp/nearby_ais_out
