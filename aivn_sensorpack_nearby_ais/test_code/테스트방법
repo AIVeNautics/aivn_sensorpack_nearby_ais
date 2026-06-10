@@ -11,3 +11,9 @@ ais 데이터 테스트 .
 device_type: "auto"로 되어 있음.
 ais 데이터가 먼저 들어오면 ais 타입으로 설정되어서 이후 ecs 데이터는 파싱되지않음. 마찬가지로 ecs데이터가 먼저들어오면 ais데이터 파싱은 되지않음.
 실해역에서는 ais 장비 or ecs 장비 둘중 하나만 사용하기 때문에 문제가 발생하지 않음. 
+---------------------------
+260514 부산 수영만 테스트 
+당시 ais 데이터수신에 문제가 있었어서 w2k_60003에서 들어오는 데이터를 노드 브리지로 변환하고 받아야함. 
+1. ros2 launch aivn_sensorpack_ais ais_topic_bridge.launch.py 
+2. ros2 topic echo /sensor_pack/navigation/novatel_isro_p2/w2k_60003
+3. 
